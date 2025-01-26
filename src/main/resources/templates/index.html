@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Enter Height</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<h2>Enter your height in cm:</h2>
+<form action="/submitHeight" method="post">
+    <input type="number" name="height" required>
+    <button type="submit">Submit</button>
+</form>
+<p th:text="${message}"></p>
+</body>
+</html>
